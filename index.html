@@ -14,35 +14,36 @@
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"/>
+      <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header class="page-header">
-      <div class="container nav-header">
-        <nav class="nav">
-          <a class="nav__logo" href="./index.html" lang="en"><span class="nav__slogan">Web</span>Studio</a>
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link nav__link--current" href="./index.html">Студия</a></li>
-            <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
-            <li class="nav__item"><a class="nav__link" href="/Контакты">Контакты</a></li>
+      <div class="container header">
+        <nav class="nav-header">
+          <a class="logo header__logo" href="./index.html" lang="en"><span class="slogan header__slogan">Web</span>Studio</a>
+          <ul class="nav-header__list">
+            <li class="nav-header__item"><a class="nav-header__link nav-header__link--current" href="./index.html">Студия</a></li>
+            <li class="nav-header__item"><a class="nav-header__link" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav-header__item"><a class="nav-header__link" href="/Контакты">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="header">
-          <li class="header__item">
+        <ul class="header-list">
+          <li class="header-list__item">
             <a
-              class="header__link"
+              class="header-list__link"
               href="mailto:info@devstudio.com"
               aria-label="Иконка конверта">
-              <svg class="header__icon" width="16" height="12">
+              <svg class="header-list__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com
             </a>
           </li>
-          <li class="header__item">
-            <a class="header__link" 
+          <li class="header-list__item">
+            <a class="header-list__link" 
             href="tel:+380961111111"
             aria-label="Иконка смартфона">
-            <svg class="header__icon" width="10" height="16">
+            <svg class="header-list__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use></svg>+38 096 111 11 11
               </a>
           </li>
@@ -63,7 +64,7 @@
 
       <section class="section aside">
         <div class="container">
-          <h2 class="visually-hidden">Особенности</h2>
+          <h2 class="aside-title visually-hidden">Особенности</h2>
           <ul class="aside-list">
             <li class="aside-list__item">
               <div class="aside-list__icon">
@@ -437,7 +438,7 @@
     <footer class="page-footer">
       <div class="container main-footer">
         <div class="footer-address main-footer__footer-address">
-          <a class="footer-address__logo" href="./index.html" lang="en"><span class="footer-address__slogan">Web</span>Studio</a>
+          <a class="logo main-footer__logo" href="./index.html" lang="en"><span class="slogan main-footer__slogan">Web</span>Studio</a>
           <address class="footer-address__all">г. Киев, пр-т Леси Украинки, 26</address>
           <ul class="footer-address__list">
             <li class="footer-address__item">
@@ -511,7 +512,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btn" data-modal-close>
           <svg class="modal__icon" width="18" height="18">
