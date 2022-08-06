@@ -8,6 +8,10 @@
     --socials-icon-color: #AFB1B8;
     --form-text-color:  #757575;
     --form-border-color: rgba(33, 33, 33, 0.2);
+    --modal-brg-color: #FFFFFF;
+    --header-brg-color: #FFFFFF;
+    --footer-brg-color: #2F303A;
+
 
     --indent: 15px;
     --items: 3;
@@ -70,7 +74,7 @@ a {
     left: 0;
     width: 100%;
     z-index: 100;
-    background-color: #fff;
+    background-color: var(--header-brg-color);
     border: 1px solid #ECECEC;
 }
 
@@ -198,7 +202,6 @@ a {
     background-size: cover;
     background-color: var(--brg-color);
 }
-
 
 .hero__title  {
     margin-bottom: 30px;
@@ -329,10 +332,10 @@ a {
     
 }
 
-
 .about__section-title {
     margin-bottom: 50px;
 }
+
 
 .about-list {
     display: flex;
@@ -365,7 +368,7 @@ a {
 
 
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--brg-color-fon);
 }
 .team__section-title {
     margin-bottom: 50px;
@@ -407,6 +410,7 @@ a {
 }
 
 
+
 .social-list{
     display: flex;
     align-items: center;
@@ -434,6 +438,7 @@ a {
     background-color: var(--accent-color);
     color: var(--hero-title-color);
 }
+
 .social-list__icon{
     fill: currentColor;
 }
@@ -477,7 +482,7 @@ a {
 
 .page-footer {
     padding: 60px 0;
-    background-color: #2F303A;
+    background-color: var(--footer-brg-color);
 }
 .main-footer {
     display: flex;
@@ -546,15 +551,15 @@ a {
 }
 
 .footer-title {
-    margin-bottom: 20px;
- 
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--hero-title-color);
 }
-
+.main-footer__footer-title {
+    margin-bottom: 20px;
+}
 
 .footer-social__list {
     display: flex;
@@ -599,7 +604,7 @@ a {
     padding: 15px;
     width: 358px;
     height: 50px;
-    color: #FFFFFF;
+    color: var(--hero-title-color);
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -650,6 +655,9 @@ a {
     display: flex;
     justify-content: center;
     gap: 8px;
+    
+}
+.progect__progect-filtre {
     margin-bottom: 50px;
 }
 
@@ -678,6 +686,7 @@ a {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+
 .progect-list {
     display: flex;
     flex-wrap: wrap;
@@ -692,13 +701,12 @@ a {
     transition: box-shadow var(--anim);
 }
 
-
 .progect-overlay {
     position: relative;
     overflow: hidden;
 }
 
-.overlay-text {
+.progect-overlay__text {
     position: absolute;
     top: 0;
     left: 0;
@@ -724,7 +732,8 @@ a {
     transition: transform var(--anim);
 }
 
-.progect-list__item:hover .overlay-text {
+.progect-list__item:hover 
+.progect-overlay__text {
     transform: translateY(0);
 }
 
@@ -755,6 +764,8 @@ a {
     line-height: calc(30 / 16);
     letter-spacing: 0.03em;
 }
+
+
 
 
 
@@ -790,7 +801,7 @@ a {
     width: 528px;
     height: 581px;
 
-    background-color: #FFFFFF;
+    background-color: var(--modal-brg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
@@ -806,7 +817,7 @@ a {
 }
 
 
-.modal-btn {
+.modal__btn {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -825,11 +836,11 @@ a {
     cursor: pointer;
 }
 
-.modal-icon {
+.modal__icon {
     fill: currentColor;
 }
-.modal-icon:hover,
-.modal-icon:focus {
+.modal__icon:hover,
+.modal__icon:focus {
     fill: var(--accent-color);
 }
 
@@ -839,7 +850,7 @@ a {
     text-align: center;
   }
   
-  .register-form-title {
+  .register-form__title {
     display: block;
     margin-bottom: 12px;
 
@@ -851,21 +862,21 @@ a {
     color: var(--brand-color);   
   }
   
-  .register-form-group {
+  .register-form__group {
     margin-bottom: 20px;
   }
   
-  .register-form-wrap {
+  .register-form__wrap {
     position: relative;
     display: block;
     margin-bottom: 10px;
   }
   
-  .register-form-wrap:last-child {
+  .register-form__wrap:last-child {
     margin-bottom: 0;
   }
   
-  .register-form-label {
+  .register-form__label {
     display: block;
     margin-bottom: 4px;
 
@@ -876,7 +887,7 @@ a {
     color: var(--form-text-color);
   }
   
-  .register-form-input {
+  .register-form__input {
     width: 100%;
     height: 40px;
     border:1px solid var(--form-border-color);
@@ -887,17 +898,17 @@ a {
     outline: transparent;
   }
  
-  .register-form-input:focus,
-  .register-form-message:focus {
+  .register-form__input:focus,
+  .register-form__message:focus {
     border: 1px solid var(--accent-color);
     cursor: pointer;
   }
 
-  .register-form-input:focus ~ .register-form-icon {
+  .register-form__input:focus ~ .register-form__icon {
     fill: var(--accent-color);  
 }
 
-  .register-form-message {
+  .register-form__message {
     width: 100%;
     height: 120px;
     padding: 12px 16px;
@@ -907,7 +918,7 @@ a {
     outline: transparent;
   }
   
-  .register-form-icon {
+  .register-form__icon {
     position: absolute;
     bottom: 11px;
     left: 11px;
@@ -921,21 +932,21 @@ a {
    margin-bottom: 30px;
   }
   
-  .register-checkbox:checked + .register-icon .register-icon-uncheck {
+  .register-form-agreement__checkbox:checked + .register-form-agreement__icon .register-form-agreement__icon-uncheck {
     opacity: 0;
     transition: opacity var(--anim);
   }
   
-  .register-icon-check {
+  .register-form-agreement__icon-check {
     opacity: 0;
     transition: opacity var(--anim);
   }
   
-  .register-checkbox:checked + .register-icon .register-icon-check {
+  .register-form-agreement__checkbox:checked + .register-form-agreement__icon .register-form-agreement__icon-check {
     opacity: 1;
   }
   
-  .register-form-agreement-text {
+  .register-form-agreement__text {
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -944,13 +955,13 @@ a {
   
   }
   
-  .register-form-agreement-link {
+  .register-form-agreement__link {
     color: var(--accent-color);
     text-decoration-line: underline; 
    
   }
   
-  .register-form-btn {
+  .register-form__btn {
    
     font-family: inherit;
     color: var(--hero-title-color);
@@ -971,9 +982,9 @@ a {
     transition: box-shadow var(--anim);
   }
 
-  .register-form-btn:hover,
-  .register-form-btn:focus,
-  .register-form-btn:active {
+  .register-form__btn:hover,
+  .register-form__btn:focus,
+  .register-form__btn:active {
     background-color: #188CE8;
   }
 
