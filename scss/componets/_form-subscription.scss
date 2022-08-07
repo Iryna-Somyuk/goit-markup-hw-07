@@ -1,11 +1,10 @@
 .form-subscription {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 
-}
-.form-subscription__email {
+  &__email {
     padding: 15px;
     width: 358px;
     height: 50px;
@@ -14,21 +13,19 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
 
-&:not(:placeholder-shown):required:valid {
-    border-color: var(--accent-color);
-    background-color: transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:not(:placeholder-shown):required:valid {
+      border-color: var(--accent-color);
+      background-color: transparent;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    &:not(:placeholder-shown):required:invalid {
+      border-color: red;
+      background-color: transparent;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
 
-}
-&:not(:placeholder-shown):required:invalid {
-    border-color: red;
-    background-color: transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-}
-}
-
-.form-subscription__btn {
+  &__btn {
     font-family: inherit;
     color: var(--hero-title-color);
     font-weight: 700;
@@ -36,7 +33,7 @@
     line-height: calc(30 / 16);
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
     letter-spacing: 0.06em;
     cursor: pointer;
 
@@ -51,6 +48,7 @@
     &:hover,
     &:focus,
     &:active {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
 }

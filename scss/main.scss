@@ -2,6 +2,7 @@
 @import "./utils/variabls";
 @import "./utils/visually-hidden";
 @import "./utils/animations";
+@import "./utils/placeholders";
 
 
 // base.styles
@@ -11,7 +12,7 @@
 
 
 // componets.styles
-@import "./componets/section";
+
 @import "./componets/container";
 @import "./componets/main";
 @import "./componets/logo";

@@ -5,26 +5,26 @@
 .main-footer {
     display: flex;
     align-items: baseline; 
-}
 
-.main-footer__footer-social {
+    &__footer-social {
     margin-right: 93px;
 }
-.main-footer__footer-address {
+    &__footer-address {
     margin-right: 70px;
 }
 
-.main-footer__footer-title {
+    &__footer-title {
     margin-bottom: 20px;
 }
 
-.main-footer__logo {
+    &__logo {
     display:block;
     margin-bottom: 20px;
     color: var(--hero-title-color);
 }
-.main-footer__slogan {
+    &__slogan {
     color: var(--accent-color);
+}
 }
 
 .footer-address__all {
@@ -35,7 +35,6 @@
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     font-style: normal;
-
 }
 
 .footer-address__item:nth-last-child(2) {
@@ -58,20 +57,7 @@
 }
 }
 
-.footer-social__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;    
-}
-
-.footer-social__link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+.social-list__link--footer {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--hero-title-color);
     transition: background-color var(--anim);
@@ -82,10 +68,6 @@
     background-color: var(--accent-color);
  
 }
-
 }
 
-.footer-social__icon{
-    fill: currentColor;
-}
 

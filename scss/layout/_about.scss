@@ -1,19 +1,21 @@
+.about {
+  @extend %section;
 
-.about__section-title {
+  &__section-title {
     margin-bottom: 50px;
+  }
 }
 
 .about-list {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
+  display: flex;
+  align-items: center;
+  gap: 30px;
 
-.about-list__img {
+  &__img {
     position: relative;
-}
+  }
 
-.about-list__label {
+  &__label {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -30,5 +32,6 @@
     text-transform: uppercase;
     color: var(--hero-title-color);
 
-    background-image: linear-gradient( to bottom, rgba(47, 48, 58, 0.8) 100%, #2F303A);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8) 100%, #2f303a);
+  }
 }
